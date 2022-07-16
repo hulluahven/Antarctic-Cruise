@@ -1,0 +1,238 @@
+
+.promo {
+  background-color: $alice-blue;
+}
+
+.promo--hidden .promo__title-wrapper {
+  @media (max-width: $vp-767) {
+    opacity: 0;
+  }
+}
+
+.promo__title-container {
+  width: auto;
+  margin-top: -73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../../img/back-desktop.png") no-repeat center;
+  background-color: $tangaroa;
+  background-size: cover;
+  box-shadow: $shadow;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-desktop@2x.png") no-repeat center;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    margin-top: -51px;
+    background: url("../../img/back-tablet.png") no-repeat center;
+    background-size: cover;
+    box-shadow: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.png") no-repeat center;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: -68px;
+    background: url("../../img/back-mobile.png") no-repeat center;
+    background-size: 100%, cover;
+    box-shadow: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-mobile@2x.png") no-repeat center;
+    }
+  }
+}
+
+.promo__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 23px;
+  gap: 10px;
+  width: 73%;
+  margin: 0 13%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    width: 78%;
+    padding-left: 0;
+    padding-top: 35%;
+    padding-bottom: 36%;
+    margin-left: 49px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 84%;
+    padding-top: 63%;
+    padding-bottom: 63%;
+    padding-left: 3px;
+    margin: 0 4%;
+    gap: 7px;
+  }
+}
+
+.promo__title {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+  margin: 0;
+  color: $alice-blue;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 36px;
+    line-height: 125%;
+    min-height: 94px;
+  }
+}
+
+.promo__brake {
+  display: none;
+
+  @media (max-width: $vp-450) {
+    display: inline;
+  }
+}
+
+.promo__slogan {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $alice-blue;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 16px;
+    line-height: 140%;
+    min-height: 47px;
+  }
+}
+
+.promo__description-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 9%;
+  padding-bottom: 9%;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    width: 89%;
+    padding-top: 80px;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.promo__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  padding-top: 56px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    width: 48%;
+    padding-top: 11px;
+    padding-left: 6px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+.promo__description-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+.promo__description-brake {
+  display: none;
+
+  @media (max-width: $vp-1279) {
+    display: inline;
+  }
+
+  @media (max-width: $vp-767) {
+    display: inline;
+  }
+}
+
+.promo__description-brake--text {
+  display: inline;
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+
+  @media (min-width: $vp-1335) {
+    display: none;
+  }
+}
+
+.promo__description-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 24px;
+
+  @media (max-width: $vp-1279) {
+    padding-top: 15px;
+  }
+
+  @media (max-width: $vp-767) {
+    line-height: 150%;
+    padding-top: 16px;
+  }
+}
+
+.promo__description-image {
+  display: flex;
+  width: 48%;
+
+  @media (max-width: $vp-1279) {
+    width: 48%;
+    padding-top: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    padding-top: 33px;
+  }
+}
