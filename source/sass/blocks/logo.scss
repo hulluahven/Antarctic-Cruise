@@ -1,0 +1,32 @@
+.logo__wrapper {
+  padding: 0 0 0 3px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    padding: 7px 0 0 8px;
+  }
+}
+
+.logo__mountain {
+  display: none;
+
+  @media (min-width: $vp-1280) {
+    display: block;
+  }
+}
+
+.logo__cliff {
+  display: none;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    display: block;
+  }
+}
+
+.logo__hill {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: block;
+    fill: $tangaroa;
+  }
+}

@@ -1,0 +1,28 @@
+
+.advantages {
+  background: $alice-blue url("../../img/desk-features.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages__container {
+  // background: $alice-blue url("../../img/desk-features.png") no-repeat center;
+}
+
+.advantages__list-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 49px;
+  padding-bottom: 121px;
+}
+
+.advantages__title-wrapper {
+  text-align: center;
+  padding-top: 8%;
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  line-height: 42px;
+}

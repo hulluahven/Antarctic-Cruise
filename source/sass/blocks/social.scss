@@ -1,0 +1,30 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  padding-top: 6px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    gap: 22px;
+    padding: 8px 10px 0 0;
+  }
+
+  @media (max-width: $vp-767) {
+    gap: 22px;
+    padding: 24px 11px 36px;
+  }
+}
+
+.social__item svg {
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 16px;
+    height: 16px;
+  }
+}
