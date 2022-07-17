@@ -155,8 +155,48 @@
         </section>
         <section class="booking">
           <div class="booking__wrapper">
-            <div class="booking__title-container"></div>
-            <div class="booking__form-conainer"></div>
+            <div class="booking__title-container">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур
+                <br>
+                за 3-6 месяцев
+                до&nbsp;даты выезда и сэкономьте до 50%</p>
+            </div>
+            <div class="booking__form-container">
+              <p>Оставьте заявку
+                <br>
+                и мы свяжемся
+                с вами в ближайшее время</p>
+                <form class="booking__form form">
+                  <div class="form__fieldset-container">
+                    <fieldset class="form__fieldset fieldset">
+                      <ul class="fieldset__list">
+                        <li class="fieldset__list-item">
+                          <label for="name"></label>
+                          <input id="name" type="text" name="firstname" placeholder="Имя">
+                        </li>
+                        <li class="fieldset__list-item">
+                          <label for="phone-number"></label>
+                          <input id="phone-number" type="tel" name="phone" placeholder="Телефон">
+                        </li>
+                        <li class="fieldset__list-item">
+                          <label for="mail"></label>
+                          <input id="mail" type="email" name="email" placeholder="Email">
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </div>
+                  <div class="form__checkbox-container">
+                    <input id="personal-data" type="checkbox" name="data" checked>
+                    <label for="personal-data">Я согласен на обработку
+                      <br>
+                      моих персональных данных</label>
+                  </div>
+                  <div class="form__button-container">
+                    <button type="submit">Оставить заявку</button>
+                  </div>
+                </form>
+            </div>
           </div>
         </section>
       </main>
