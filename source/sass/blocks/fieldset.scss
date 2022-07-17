@@ -1,0 +1,41 @@
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldset__list-item input {
+  padding: 4% 3% 10px 5%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  background-color: $alice-blue;
+  border: none;
+
+  @media (max-width: $vp-1279) {
+    padding-top: 12px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 12px 3% 10px 7%;
+  }
+}
+
+.fieldset__list-item input::-webkit-input-placeholder {
+  color: $tangaroa-shadow;
+}
+
+.fieldset__list-item input::-moz-placeholder {
+  color: $tangaroa-shadow;
+}

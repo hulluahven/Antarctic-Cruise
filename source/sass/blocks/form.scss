@@ -1,0 +1,122 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 52px;
+  padding-right: 51px;
+  padding-top: 26px;
+  gap: 23px;
+
+  @media (max-width: $vp-1279) {
+    padding-top: 28px;
+    padding-left: 51px;
+    padding-right: 49px;
+    padding-bottom: 51px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 28px 32px 43px 29px;
+    gap: 18px;
+  }
+}
+
+.form__checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  gap: 6px;
+
+  @media (max-width: $vp-767) {
+    text-align: start;
+    padding-left: 0;
+    gap: 14px;
+  }
+}
+
+.form__checkbox-container label {
+  font-size: 10px;
+  line-height: 130%;
+  font-weight: 400;
+  color: $alice-blue;
+  position: relative;
+
+  @media (max-width: $vp-767) {
+    line-height: 120%;
+  }
+}
+
+.form__checkbox-container input {
+  opacity: 0;
+}
+
+.form__checkbox-container input + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: -4px;
+    width: 20px;
+    height: 20px;
+    background-color: $alice-blue;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  @media (max-width: $vp-767) {
+    &::before {
+      left: -27px;
+      top: 2px;
+    }
+  }
+}
+
+.form__checkbox-container input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 0;
+    width: 9px;
+    height: 8px;
+    box-sizing: border-box;
+    border-left: 2px solid $tangaroa;
+    border-bottom: 2px solid $tangaroa;
+    transform: rotate(-45deg);
+    z-index: 3;
+    display: block;
+  }
+
+  @media (max-width: $vp-767) {
+    &::after {
+      left: -22px;
+      top: 7px;
+    }
+  }
+}
+
+.form__button-container {
+  width: 98%;
+
+  @media (max-width: $vp-767) {
+    width: 99%;
+  }
+}
+
+.form__button-container button {
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+  color: $tangaroa;
+  border: none;
+  background-color: $alice-blue;
+  padding: 4% 4px 3% 3px;
+  margin-top: 9px;
+  margin-left: 0;
+  box-sizing: content-box;
+
+  @media (max-width: $vp-767) {
+    padding: 5% 1px 4% 0;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
