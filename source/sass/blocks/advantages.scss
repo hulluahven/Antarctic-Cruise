@@ -2,27 +2,76 @@
 .advantages {
   background: $alice-blue url("../../img/desk-features.png") no-repeat center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/desk-features@2x.png") no-repeat center;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    background: $alice-blue url("../../img/tablet-features.png") no-repeat center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/tablet-features@2x.png") no-repeat center;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: -68px;
+    background: url("../../img/mobile-features.png") no-repeat center;
+    background-size: cover;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/mobile-features@2x.png") no-repeat center;
+    }
+  }
 }
 
-.advantages__container {
-  // background: $alice-blue url("../../img/desk-features.png") no-repeat center;
+.advantages__title-wrapper {
+  text-align: center;
+  padding-top: 8%;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    padding-top: 12%;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 18%;
+  }
+}
+
+.advantages__title-wrapper h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  line-height: 42px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    font-size: 26px;
+    line-height: 39px;
+    padding-left: 8px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .advantages__list-wrapper {
   display: flex;
   justify-content: center;
   padding-top: 49px;
-  padding-bottom: 121px;
+  padding-bottom: 119px;
+
+  @media (max-width: $vp-767) {
+    padding-top: 9%;
+    padding-bottom: 21%;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    padding-bottom: 13%;
+  }
 }
 
-.advantages__title-wrapper {
-  text-align: center;
-  padding-top: 8%;
-}
-
-.advantages__title {
-  margin: 0;
-  padding: 0;
-  font-size: 28px;
-  line-height: 42px;
-}
