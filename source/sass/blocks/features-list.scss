@@ -6,41 +6,223 @@
   flex-wrap: wrap;
   gap: 45px;
   justify-content: center;
-}
 
-.features-list__title {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 15%;
-    height: 143%;
-    background: url("../../img/svg/ship.svg") no-repeat center;
-    top: -55px;
-    left: -6px;
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    gap: 23px;
   }
-}
 
-.features-list__text {
-  margin: 0;
-  padding: 0;
-  padding-top: 6px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.features-list__item-wrapper {
-  padding: 83px 20px 27px 28px;
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .features-list__item {
   padding: 0;
   background-color: $alice-blue;
   width: 26%;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    width: 27%;
+    margin-left: 6px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 90%;
+  }
+}
+
+.features-list__item-container {
+  padding: 23% 8% 8% 8%;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    padding: 34% 6% 9% 10%;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 24% 8% 7% 6%;
+  }
+}
+
+.features-list__item h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 32px;
+    top: -53px;
+    left: -13px;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    &::before {
+      width: 39px;
+      height: 26px;
+      top: -45px;
+      left: -8px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    &::before {
+      width: 49px;
+      height: 26px;
+      top: -44px;
+      left: -13px;
+    }
+  }
+}
+
+.features-list__item--ship h3 {
+  &::before {
+    background: url("../../img/svg/feaures-ship.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-right: 15%;
+  }
+}
+
+.features-list__item--allin h3 {
+  &::before {
+    width: 38px;
+    height: 21px;
+    top: -48px;
+    left: 0;
+    background: url("../../img/svg/features-checked.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    &::before {
+      width: 35px;
+      height: 22px;
+      top: -43px;
+      left: 0;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    padding-right: 15%;
+
+    &::before {
+      width: 34px;
+      height: 23px;
+      top: -43px;
+      left: 0;
+    }
+  }
+}
+
+.features-list__item--zodiac h3 {
+  &::before {
+    width: 41px;
+    height: 21px;
+    top: -48px;
+    left: 0;
+    background: url("../../img/svg/features-boat.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    &::before {
+      width: 38px;
+      height: 25px;
+      top: -45px;
+      left: 0;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    padding-right: 19%;
+
+    &::before {
+      width: 38px;
+      height: 19px;
+      top: -42px;
+      left: 0;
+    }
+  }
+}
+
+.features-list__item p {
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    padding: 5% 4% 0 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 3%;
+  }
+}
+
+.features-list__item--allin p {
+  padding-right: 6%;
+
+  @media (max-width: $vp-767) {
+    padding: 4% 11% 0 0;
+  }
+}
+
+.features-list__item--zodiac p {
+  padding-right: 20%;
+
+  @media (max-width: $vp-1279) {
+    padding-right: 4%;
+  }
+}
+
+.features-list__item--allin br {
+  display: none;
+
+  @media (max-width: $vp-1279) {
+    display: inline;
+  }
+}
+
+.features-list__item--zodiac br:nth-of-type(2n) {
+  display: none;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    display: none;
+  }
+
+  @media (max-width: $vp-767) {
+    display: inline;
+  }
+}
+
+.features-list__item--zodiac br:nth-of-type(2n+1) {
+  display: inline;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+    display: none;
+  }
+
+  @media (max-width: $vp-767) {
+    display: inline;
+  }
+}
+
+.features-list__item--ship br {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: inline;
+  }
 }
