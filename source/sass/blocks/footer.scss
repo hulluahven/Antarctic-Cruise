@@ -6,11 +6,13 @@
   display: flex;
   justify-content: space-between;
   padding-top: 43px;
+  padding-bottom: 43px;
   width: 92%;
   margin: 0 auto;
 
   @media (min-width: $vp-768) and (max-width: $vp-1279) {
     padding-top: 33px;
+    padding-bottom: 37px;
   }
 
   @media (max-width: $vp-767) {
