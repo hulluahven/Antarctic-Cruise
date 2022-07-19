@@ -71,6 +71,11 @@
   opacity: 1;
 }
 
+.cruise:focus-within .cruise__description {
+  cursor: pointer;
+  opacity: 1;
+}
+
 .cruise__description h3 {
   position: initial;
 }

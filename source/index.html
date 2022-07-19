@@ -18,8 +18,7 @@
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
-      <header class="page-header page-header--closed">
-        <!-- page-header--closed меняется соотв -->
+      <header class="page-header" data-header>
         <div class="page-header__container">
           <a class="page-header__logo logo logo--header" href="#">
             <div class="logo__wrapper">
@@ -40,14 +39,13 @@
               </svg>
             </div>
           </a>
-          <nav class="main-nav main-nav--nojs main-nav--closed">
-            <!-- main-nav--closed меняется соотв -->
+            <nav class="main-nav is-open" data-nav>
             <svg class="main-nav__logo" width="42" height="22" viewBox="0 0 42 22" fill="#011c40" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z" fill="##011c40"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M41.6649 19.7024C28.5846 9.51096 8.22544 23.522 0 18.1188C9.04339 25.7756 30.1812 12.832 41.6649 19.7024Z" fill="#011c40"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20.5038C31.7374 14.1941 16.4741 22.9749 8.65134 20.9415C17.128 24.9111 32.9089 16.1156 42 20.5038Z" fill="##011c40"/>
             </svg>
-            <button class="main-nav__toggle" type="button">
+            <button class="main-nav__toggle" data-button type="button">
               <span class="visually-hidden">Открыть/закрыть меню</span>
             </button>
             <div class="main-nav__wrapper">
@@ -78,8 +76,7 @@
         </div>
       </header>
       <main class="page-main">
-        <section class="promo">
-          <!-- для откр меню доб promo--hidden -->
+          <section class="promo is-hidden" data-promo>
           <div class="promo__title-container">
             <div class="promo__title-wrapper">
               <h1 class="promo__title">Круизы <br class="promo__brake">в Антарктику</h1>
@@ -183,7 +180,6 @@
                       <p>11 дней</p>
                       <h4>Цена</h4>
                       <p>от 11500 $</p>
-                      <!-- <a href="#">Забронировать</a> -->
                     </div>
                     <a href="#">Забронировать</a>
                   </div>
@@ -211,7 +207,6 @@
                       <p>20 дней</p>
                       <h4>Цена</h4>
                       <p>от 14500 $</p>
-                      <!-- <a href="#">Забронировать</a> -->
                     </div>
                     <a href="#">Забронировать</a>
                   </div>
@@ -239,7 +234,6 @@
                       <p>15 дней</p>
                       <h4>Цена</h4>
                       <p>от 14500 $</p>
-                      <!-- <a href="#">Забронировать</a> -->
                     </div>
                     <a href="#">Забронировать</a>
                   </div>
