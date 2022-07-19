@@ -3,11 +3,6 @@
   background-color: $alice-blue;
 }
 
-.promo--hidden .promo__title-wrapper {
-  @media (max-width: $vp-767) {
-    opacity: 0;
-  }
-}
 
 .promo__title-container {
   width: auto;
@@ -73,6 +68,12 @@
     padding-left: 3px;
     margin: 0 4%;
     gap: 7px;
+  }
+}
+
+[data-promo].is-hidden .promo__title-wrapper {
+  @media (max-width: $vp-767) {
+    opacity: 0;
   }
 }
 

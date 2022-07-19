@@ -23,7 +23,19 @@
   }
 }
 
-.page-header--opened .page-header__logo {
+.page-header__logo {
+  @media (max-width: $vp-767) {
+    opacity: 0;
+  }
+}
+
+[data-header].is-closed .page-header__logo {
+  @media (max-width: $vp-767) {
+    opacity: 1;
+  }
+}
+
+[data-header].is-open .page-header__logo {
   @media (max-width: $vp-767) {
     opacity: 0;
   }
