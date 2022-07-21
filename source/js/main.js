@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  // console.log(pageHeader.closest('[data-header]'))
+
 
   // Modules
   // ---------------------------------

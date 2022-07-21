@@ -23,7 +23,7 @@
   background-color: $alice-blue;
   border: none;
 
-  @media (max-width: $vp-1279) {
+  @media (max-width: $vp-1023) {
     padding-top: 12px;
   }
 
@@ -38,4 +38,22 @@
 
 .fieldset__list-item input::-moz-placeholder {
   color: $tangaroa-shadow;
+}
+
+.fieldset__list-item input:hover {
+  background-color: $quartz;
+  cursor: pointer;
+}
+
+.fieldset__list-item input:focus {
+  background-color: $quartz;
+  cursor: pointer;
+  outline: 2px solid $cello;
+  transform: scale(1.1);
+}
+
+.fieldset__list-item input:active {
+  background-color: $quartz;
+  outline: 2px solid $cello;
+  transform: scale(1.1);
 }

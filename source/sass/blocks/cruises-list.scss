@@ -2,30 +2,33 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 19%);
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 19px;
+  row-gap: 28px;
   justify-content: center;
+  padding-left: 6px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
-    grid-template-columns: repeat(2, 41%);
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     column-gap: 27px;
     row-gap: 29px;
+    padding: 0 0 0 45px;
   }
 
   @media (max-width: $vp-767) {
-    grid-template-columns: 85%;
-    gap: 27px;
+    column-gap: 27px;
+    row-gap: 21px;
   }
 }
 
 .cruises-list__item {
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     box-sizing: border-box;
     padding: 0 1px 1px 2px;
   }
 
   @media (max-width: $vp-767) {
     padding: 0 1px 3px 1px;
+    grid-template-columns: 270px;
   }
 }

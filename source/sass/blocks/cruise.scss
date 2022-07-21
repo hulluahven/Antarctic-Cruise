@@ -1,7 +1,7 @@
-
 .cruise {
   position: relative;
   display: grid;
+  padding-left: 11px;
 }
 
 .cruise h3 {
@@ -12,11 +12,11 @@
   color: $alice-blue;
   position: absolute;
   bottom: 6%;
-  left: 11%;
+  left: 15%;
   z-index: 5;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
-    bottom: 7%;
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    bottom: 8%;
     left: 12%;
   }
 
@@ -37,18 +37,25 @@
 }
 
 .cruise__description-wrapper {
-  padding: 20px 0 0 24px;
+  padding: 30px 0 0 28px;
   min-height: 292px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
-    padding: 18px 0 0 36px;
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding: 28px 0 0 36px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 30px 0 0 27px;
   }
 }
 
 .cruise__description-wrapper br {
   display: none;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     display: inline;
   }
 }
@@ -62,7 +69,6 @@
   z-index: 100;
   grid-column: 1/2;
   grid-row: 1/2;
-  display: grid;
   align-content: center;
 }
 
@@ -101,10 +107,31 @@
   width: 81%;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 9px 0 24px 25px;
+  margin: 20px 0 24px 29px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     width: 77%;
     margin-left: 35px;
   }
+
+  @media (max-width: $vp-767) {
+    width: 84%;
+    margin: 21px 0 35px 25px;
+  }
+}
+
+.cruise__description a:hover {
+  background-color: $cello;
+  color: $quartz;
+}
+
+.cruise__description a:focus {
+  background-color: $cello;
+  color: $quartz;
+}
+
+.cruise__description a:active {
+  background-color: $cello;
+  color: $quartz;
+  transform: scale(0.7);
 }

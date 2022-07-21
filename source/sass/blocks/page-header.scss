@@ -1,17 +1,15 @@
-
 .page-header__container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding-top: 35px;
-  padding-left: 100px;
-  padding-right: 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 75px;
+  padding-right: 33px;
+  // display: none;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
-    padding-top: 22px;
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     padding-left: 40px;
-    padding-right: 43px;
-    gap: 47px;
+    padding-right: 25px;
   }
 
   @media (max-width: $vp-767) {
@@ -24,7 +22,14 @@
 }
 
 .page-header__logo {
+  margin-top: 35px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    margin-top: 23px;
+  }
+
   @media (max-width: $vp-767) {
+    margin-top: 0;
     opacity: 0;
   }
 }

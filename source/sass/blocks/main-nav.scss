@@ -1,6 +1,5 @@
-
 .main-nav {
-  width: 100%;
+  // width: 100%;
 
   @media (max-width: $vp-767) {
     z-index: -1;
@@ -67,6 +66,14 @@
 }
 
 .main-nav__wrapper {
+  z-index: 10;
+  position: relative;
+  padding-top: 45px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding-top: 30px;
+  }
+
   @media (max-width: $vp-767) {
     position: absolute;
     background-color: rgba(0, 43, 102, 0.5);

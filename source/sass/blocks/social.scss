@@ -5,20 +5,21 @@
   display: flex;
   gap: 26px;
   padding-top: 6px;
+  padding-right: 49px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
-    gap: 22px;
-    padding: 8px 10px 0 0;
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    gap: 20px;
+    padding: 9px 10px 0 0;
   }
 
   @media (max-width: $vp-767) {
-    gap: 22px;
+    gap: 20px;
     padding: 24px 11px 36px;
   }
 }
 
 .social__item svg {
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     width: 16px;
     height: 16px;
   }
@@ -27,4 +28,22 @@
     width: 16px;
     height: 16px;
   }
+}
+
+.social__link svg {
+  fill: $alice-blue;
+}
+
+.social__link svg:hover {
+  fill: $iron;
+  transform: scale(1.2);
+}
+
+.social__link:focus {
+  fill: $iron;
+  transform: scale(1.2);
+}
+
+.social__link:active {
+  fill: $quartz;
 }

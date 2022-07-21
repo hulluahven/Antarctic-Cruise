@@ -6,13 +6,13 @@
   text-align: center;
   padding-top: 109px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     padding-top: 90px;
     padding-left: 8px;
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 56px;
+    padding-top: 54px;
   }
 }
 
@@ -21,8 +21,9 @@
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
+  padding-left: 17px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     font-size: 26px;
     line-height: 39px;
   }
@@ -30,15 +31,17 @@
   @media (max-width: $vp-767) {
     font-size: 24px;
     line-height: 36px;
+    padding-left: 0;
   }
 }
 
 .catalog__list-wrapper {
-  padding-top: 50px;
-  padding-bottom: 112px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px 4% 118px;
 
-  @media (min-width: $vp-768) and (max-width: $vp-1279) {
-    padding-bottom: 99px;
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding-bottom: 96px;
     padding-left: 7px;
   }
 
