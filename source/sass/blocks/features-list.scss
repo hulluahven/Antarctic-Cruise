@@ -9,8 +9,6 @@
 
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    // gap: 23px;
-    // gap: 30px;
     gap: 10px;
   }
 
@@ -28,8 +26,6 @@
   margin-left: 21px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    // width: 28%;
-    // margin-left: 6px;
     width: 29%;
     margin-left: 22px;
   }
@@ -41,11 +37,9 @@
 }
 
 .features-list__item-container {
-  // padding: 23% 9% 8%;
   padding: 22% 9% 8%;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    // padding: 34% 6% 9% 10%;
     padding: 33% 0 9% 10%;
   }
 

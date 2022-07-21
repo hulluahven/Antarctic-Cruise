@@ -192,12 +192,10 @@
 }
 
 .contacts__address-wrapper a:hover::before {
-  // border: 2px solid red;
   animation: shake 0.9s ease;
 }
 
 .contacts__address-wrapper a:focus::before {
-  // border: 2px solid red;
   animation: shake 0.9s ease;
 }
 
