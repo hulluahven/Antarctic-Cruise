@@ -1,0 +1,144 @@
+.cruise {
+  position: relative;
+  display: grid;
+  padding-left: 11px;
+  box-sizing: border-box;
+}
+
+.cruise h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $alice-blue;
+  position: absolute;
+  bottom: 6%;
+  left: 15%;
+  z-index: 5;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    bottom: 8%;
+    left: 12%;
+  }
+
+  @media (max-width: $vp-767) {
+    left: 9%;
+  }
+}
+
+.cruise__image {
+  position: relative;
+  z-index: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.cruise__image img {
+  display: block;
+  width: 100%;
+}
+
+.cruise__description-wrapper {
+  padding: 30px 0 0 28px;
+  min-height: 292px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  box-sizing: border-box;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding: 28px 0 0 36px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 30px 0 0 27px;
+  }
+}
+
+.cruise__description-wrapper br {
+  display: none;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    display: inline;
+  }
+}
+
+.cruise__description {
+  background-color: $tangaroa;
+  position: relative;
+  left: 0;
+  top: 1;
+  opacity: 0;
+  z-index: 100;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.cruise:hover .cruise__description {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.cruise:focus-within .cruise__description {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.cruise__description h3 {
+  position: initial;
+}
+
+.cruise__description h4 {
+  margin: 0;
+  color: $alice-blue;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 12px 0 0 0;
+}
+
+.cruise__description p {
+  margin: 0;
+  color: $quartz;
+}
+
+.cruise__description a {
+  background-color: $alice-blue;
+  text-align: center;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 81%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 20px 0 24px 29px;
+  text-decoration: none;
+  color: $tangaroa;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    width: 77%;
+    margin-left: 35px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 84%;
+    margin: 21px 0 35px 25px;
+  }
+}
+
+.cruise__description a:hover {
+  background-color: $cello;
+  color: $quartz;
+}
+
+.cruise__description a:focus {
+  background-color: $cello;
+  color: $quartz;
+}
+
+.cruise__description a:active {
+  background-color: $cello;
+  color: $quartz;
+  transform: scale(0.7);
+}

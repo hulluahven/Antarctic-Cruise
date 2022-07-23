@@ -1,0 +1,67 @@
+.logo__wrapper {
+  padding: 0 0 0 3px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding: 7px 0 0 8px;
+  }
+}
+
+.logo__wrapper .logo__main {
+  display: none;
+}
+
+.logo__mountain {
+  width: 70px;
+  height: 38px;
+  fill: $alice-blue;
+  display: block;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}
+
+.logo__cliff {
+  fill: $alice-blue;
+  width: 38px;
+  height: 20px;
+  display: none;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    display: block;
+  }
+}
+
+.logo__hill {
+  fill: $alice-blue;
+  width: 42px;
+  height: 22px;
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: block;
+  }
+}
+
+.logo__mountain:hover,
+.logo__cliff:hover,
+.logo__hill:hover,
+.footer__logo:hover {
+  fill: $iron;
+  transform: scale(1.2);
+}
+
+.logo__mountain:focus,
+.logo__cliff:focus,
+.logo__hill:focus,
+.footer__logo:focus {
+  fill: $iron;
+  transform: scale(1.2);
+}
+
+.logo__mountain:active,
+.logo__cliff:active,
+.logo__hill:active,
+.footer__logo:active {
+  fill: $quartz;
+}
