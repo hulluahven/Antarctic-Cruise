@@ -1,5 +1,6 @@
 .page {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .page__body {
@@ -11,4 +12,18 @@
   line-height: 20px;
   font-weight: 400;
   color: $tangaroa;
+  height: 100%;
+}
+
+[data-body].is-hidden {
+  @media (max-width: $vp-767) {
+    overflow-y: hidden;
+  }
+}
+
+.page__body-wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }

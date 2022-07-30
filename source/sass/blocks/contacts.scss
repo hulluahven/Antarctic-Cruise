@@ -9,17 +9,17 @@
   justify-content: center;
   display: grid;
   grid-template-columns: 51% 53%;
-  padding: 118px 5% 109px;
+  padding: 118px 5% 104px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     padding-top: 100px;
-    padding-bottom: 105px;
+    padding-bottom: 102px;
   }
 
   @media (max-width: $vp-767) {
     grid-template-columns: 100%;
     padding-top: 21px;
-    padding-bottom: 63px;
+    padding-bottom: 62px;
   }
 }
 
@@ -39,7 +39,7 @@
   transform: translate(-50%, -45%);
   width: 35px;
   height: 35px;
-  background-image: url("../../img/svg/marker.svg");
+  background-image: url("../img/svg/marker.svg");
   background-size: 35px 35px;
   background-repeat: no-repeat;
   position: absolute;
@@ -75,14 +75,14 @@
   gap: 23px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    padding: 19% 0 18% 9%;
-    gap: 17px;
+    padding: 18% 0 18% 7%;
+    gap: 19px;
   }
 
   @media (max-width: $vp-767) {
     order: 1;
     padding: 13% 1% 12% 0%;
-    gap: 18px;
+    gap: 19px;
   }
 }
 
@@ -110,7 +110,7 @@
     height: 46px;
     top: -12px;
     left: -12px;
-    background: url("../../img/svg/marker.svg") no-repeat center;
+    background: url("../img/svg/marker.svg") no-repeat center;
     background-size: 38%;
     box-sizing: border-box;
   }
@@ -134,7 +134,19 @@
   }
 }
 
-.contacts__address-wrapper a {
+.contacts__address-wrapper br {
+  display: none;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    display: inline;
+  }
+}
+
+.contacts__link-container {
+  display: flex;
+}
+
+.contacts__link-container a {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
@@ -151,7 +163,7 @@
     height: 46px;
     top: -12px;
     left: -10px;
-    background: url("../../img/svg/phone.svg") no-repeat center;
+    background: url("../img/svg/phone.svg") no-repeat center;
     background-size: 38%;
     box-sizing: border-box;
   }
@@ -195,18 +207,10 @@
   }
 }
 
-.contacts__address-wrapper a:hover::before {
+.contacts__link-container a:hover::before {
   animation: shake 0.9s ease;
 }
 
-.contacts__address-wrapper a:focus::before {
+.contacts__link-container a:focus::before {
   animation: shake 0.9s ease;
-}
-
-.contacts__address-wrapper br {
-  display: none;
-
-  @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    display: inline;
-  }
 }

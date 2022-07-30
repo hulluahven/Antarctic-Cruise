@@ -1,6 +1,14 @@
 .main-nav {
+  padding-left: 10%;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding-left: 5%;
+  }
+
   @media (max-width: $vp-767) {
+    padding: 0;
     z-index: -1;
+    padding-left: 10px;
   }
 }
 
@@ -12,6 +20,20 @@
     position: absolute;
     left: 16%;
   }
+}
+
+.main-nav--no-js .main-nav__logo {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    position: absolute;
+    left: 16%;
+  }
+}
+
+.main-nav--no-js ul {
+  margin: 0;
+  width: 100%;
 }
 
 .main-nav__toggle {
@@ -31,6 +53,10 @@
     border: none;
     background-color: transparent;
   }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
 }
 
 [data-nav].is-closed .main-nav__toggle {
@@ -75,22 +101,38 @@
   }
 }
 
+[data-nav].is-open ul {
+  @media (max-width: $vp-767) {
+    height: 400vh;
+  }
+}
+
 .main-nav__wrapper {
   z-index: 10;
   position: relative;
   padding-top: 45px;
+  padding-right: 16px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     padding-top: 30px;
   }
 
   @media (max-width: $vp-767) {
+    padding-top: 0;
+    padding-right: 0;
     position: absolute;
     background-color: rgba(0, 43, 102, 0.5);
-    top: -144px;
+    top: 0;
     width: 100%;
     right: 0;
     z-index: -1;
+  }
+}
+
+.main-nav--no-js .main-nav__wrapper {
+  @media (max-width: $vp-767) {
+    background-color: transparent;
+    position: inherit;
   }
 }
 

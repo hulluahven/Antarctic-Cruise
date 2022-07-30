@@ -16,11 +16,12 @@
     <link rel="preload" href="fonts/MontserratBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/MontserratBold.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
-  <body class="page__body">
+  <body class="page__body" data-body>
     <div class="page__body-wrapper">
-      <header class="page-header" data-header>
+      <header class="page-header page-header--no-js" data-header>
+      <!-- <header class="page-header" data-header> -->
         <div class="page-header__container">
-          <a class="page-header__logo logo logo--header" href="#">
+          <a class="page-header__logo logo logo--header" href="#">Логотип
             <div class="logo__wrapper">
               <svg class="logo__main" width="70" height="38">
                 <symbol viewBox="0 0 70 38" id="logo-mountain">
@@ -40,14 +41,15 @@
               </svg>
             </div>
           </a>
-            <nav class="main-nav is-open" data-nav>
+            <nav class="main-nav main-nav--no-js" data-nav>
+            <!-- <nav class="main-nav is-open" data-nav> -->
             <svg class="main-nav__logo" width="42" height="22">
               <use xlink:href="#logo-mountain"></use>
             </svg>
             <button class="main-nav__toggle" data-button type="button">
               <span class="visually-hidden">Открыть/закрыть меню</span>
             </button>
-            <div class="main-nav__wrapper">
+            <div class="main-nav__wrapper" data-wrapper>
               <ul class="main-nav__list menu-list menu-list--header">
                 <li class="menu-list__item">
                   <a class="menu-list__link" href="#advantages">
@@ -75,7 +77,7 @@
         </div>
       </header>
       <main class="page-main">
-          <section class="promo is-hidden" data-promo>
+          <section class="promo" data-promo>
           <div class="promo__title-container">
             <div class="promo__title-wrapper">
               <h1 class="promo__title">Круизы <br>в Антарктику</h1>
@@ -132,7 +134,7 @@
                   </h3>
                   <p>
                     Все наши круизы работают по&nbsp;системе “Все Включено”.
-                    Великолепные блюда<br>и безлимитный бар доступны для вас 24&nbsp;часа.
+                    Великолепные блюда<br> и безлимитный бар доступны для вас 24&nbsp;часа.
                   </p>
               </div>
               </li>
@@ -418,7 +420,7 @@
                         </li>
                         <li>
                           <label for="phone-number"></label>
-                          <input data-string id="phone-number" type="number" name="phone" placeholder="Телефон" required>
+                          <input data-string id="phone-number" type="tel" name="phone" placeholder="Телефон" required>
                         </li>
                         <li>
                           <label for="mail"></label>
@@ -443,7 +445,7 @@
           <div class="contacts__container">
             <div class="contacts__map-wrapper">
               <div class="contacts__marker"></div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d594.206185238406!2d30.322818263603587!3d59.93772729026142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1658089835817!5m2!1sen!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d594.206185238406!2d30.322818263603587!3d59.93772729026142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1658089835817!5m2!1sen!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="map"></iframe>
             </div>
             <div class="contacts__address-wrapper">
               <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам
@@ -452,7 +454,9 @@
                 <address>г. Санкт Петербург,
                   <br>
                   ул.&nbsp;Большая Конюшенная, 19/8</address>
+                <div class="contacts__link-container">
                   <a href="tel:88002000000">8-800-200-00-00</a>
+                </div>
             </div>
           </div>
         </section>

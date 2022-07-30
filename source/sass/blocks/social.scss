@@ -7,12 +7,12 @@
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     gap: 20px;
-    padding: 9px 10px 0 0;
+    padding: 12px 10px 0 0;
   }
 
   @media (max-width: $vp-767) {
     gap: 20px;
-    padding: 24px 11px 36px;
+    padding: 24px 11px 34px;
   }
 }
 

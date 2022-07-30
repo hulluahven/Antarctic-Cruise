@@ -4,7 +4,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 21px;
   justify-content: center;
 
 
@@ -15,7 +15,7 @@
   @media (max-width: $vp-767) {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 29px;
   }
 }
 
@@ -23,11 +23,11 @@
   padding: 0;
   background-color: $alice-blue;
   width: 29%;
-  margin-left: 9px;
+  margin-left: 15px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     width: 29%;
-    margin-left: 22px;
+    margin-left: 16px;
   }
 
   @media (max-width: $vp-767) {
@@ -37,14 +37,14 @@
 }
 
 .features-list__item-container {
-  padding: 22% 10% 8% 8%;
+  padding: 22% 8% 8% 9%;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    padding: 33% 0 9% 10%;
+    padding: 32% 0 9% 9%;
   }
 
   @media (max-width: $vp-767) {
-    padding: 25% 6% 7% 6%;
+    padding: 24% 6% 7% 6%;
   }
 }
 
@@ -87,13 +87,13 @@
 
 .features-list__item--ship h3 {
   &::before {
-    background: url("../../img/svg/feaures-ship.svg") no-repeat center;
+    background: url("../img/svg/feaures-ship.svg") no-repeat center;
     background-size: contain;
     box-sizing: border-box;
   }
 
   @media (max-width: $vp-767) {
-    padding-right: 15%;
+    padding-right: 21%;
   }
 }
 
@@ -103,7 +103,7 @@
     height: 21px;
     top: -48px;
     left: 0;
-    background: url("../../img/svg/features-checked.svg") no-repeat center;
+    background: url("../img/svg/features-checked.svg") no-repeat center;
     background-size: contain;
     box-sizing: border-box;
   }
@@ -135,7 +135,7 @@
     height: 21px;
     top: -48px;
     left: 0;
-    background: url("../../img/svg/features-boat.svg") no-repeat center;
+    background: url("../img/svg/features-boat.svg") no-repeat center;
     background-size: contain;
     box-sizing: border-box;
   }
@@ -150,7 +150,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-right: 19%;
+    padding-right: 22%;
 
     &::before {
       width: 38px;
@@ -168,7 +168,7 @@
   line-height: 20px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    padding: 5% 9% 0 0;
+    padding: 4% 11% 0 0;
   }
 
   @media (max-width: $vp-767) {

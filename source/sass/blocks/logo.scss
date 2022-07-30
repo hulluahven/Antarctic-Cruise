@@ -1,8 +1,13 @@
 .logo__wrapper {
-  padding: 0 0 0 3px;
+  padding: 0 0 0 64px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    padding: 7px 0 0 8px;
+    padding: 7px 0 0 22px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0;
+    margin-top: -20px;
   }
 }
 
