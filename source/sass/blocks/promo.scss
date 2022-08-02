@@ -53,17 +53,15 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 10px;
   margin: 0 auto;
-  padding: 280px 341px 20.5% 21px;
+  padding: 279px 341px 20.4% 7px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     width: 87%;
-    padding: 267px 0 279px;
+    padding: 269px 0 274px;
   }
 
   @media (max-width: $vp-767) {
-    gap: 7px;
     padding: 196px 0 175px 15px;
   }
 }
@@ -77,6 +75,18 @@
 [data-promo].is-hidden .promo__description-container {
   @media (max-width: $vp-767) {
     opacity: 0;
+  }
+}
+
+.promo__title-wrapper p {
+  padding-top: 11px;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+    padding-top: 13px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 6px;
   }
 }
 
@@ -140,7 +150,7 @@
   max-width: 1209px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 121px;
+  padding-bottom: 119px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -160,8 +170,8 @@
   display: flex;
   flex-direction: column;
   width: 536px;
-  padding-top: 57px;
-  padding-left: 33px;
+  padding-top: 55px;
+  padding-left: 24px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     width: 44%;
@@ -236,7 +246,7 @@
 
 .promo__description-image {
   width: 560px;
-  padding-right: 16px;
+  padding-right: 25px;
 
   @media (max-width: $vp-1023) {
     width: 45%;
@@ -256,4 +266,8 @@
   display: block;
   max-width: 100%;
   height: auto;
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
 }

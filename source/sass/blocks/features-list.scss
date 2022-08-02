@@ -4,43 +4,36 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
-  justify-content: center;
-
-
-  @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    gap: 10px;
-  }
+  justify-content: space-around;
 
   @media (max-width: $vp-767) {
     flex-direction: column;
     align-items: center;
-    gap: 29px;
   }
 }
 
 .features-list__item {
   padding: 0;
   background-color: $alice-blue;
-  width: 29%;
-  margin-left: 15px;
+  width: 30%;
+  margin-left: 0;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     width: 29%;
-    margin-left: 16px;
+    margin-left: 11px;
   }
 
   @media (max-width: $vp-767) {
     width: 100%;
-    margin-left: 0;
+    margin: 0 0 30px 0;
   }
 }
 
 .features-list__item-container {
-  padding: 22% 8% 8% 9%;
+  padding: 23% 8% 6% 8%;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    padding: 32% 0 9% 9%;
+    padding: 34% 0 9% 8%;
   }
 
   @media (max-width: $vp-767) {

@@ -19,6 +19,7 @@
     display: block;
     position: absolute;
     left: 16%;
+    top: 20px;
   }
 }
 
@@ -28,6 +29,7 @@
   @media (max-width: $vp-767) {
     position: absolute;
     left: 16%;
+    top: 20px;
   }
 }
 
@@ -57,6 +59,17 @@
 
 .main-nav--no-js .main-nav__toggle {
   display: none;
+}
+
+[data-nav].is-open {
+  @media (max-width: $vp-767) {
+    padding: 0;
+    z-index: initial;
+    width: 87%;
+    height: 50px;
+    background-color: $alice-blue;
+    margin-top: -20px;
+  }
 }
 
 [data-nav].is-closed .main-nav__toggle {
@@ -103,7 +116,9 @@
 
 [data-nav].is-open ul {
   @media (max-width: $vp-767) {
-    height: 400vh;
+    height: 50%;
+    position: fixed;
+    overflow-y: auto;
   }
 }
 
@@ -139,6 +154,15 @@
 [data-nav].is-closed .main-nav__wrapper {
   @media (max-width: $vp-767) {
     display: none;
+  }
+}
+
+.main-nav__container {
+  @media (max-width: $vp-767) {
+    background-color: $alice-blue;
+    width: 90%;
+    margin-left: 11%;
+    height: 400vh;
   }
 }
 

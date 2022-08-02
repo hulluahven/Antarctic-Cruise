@@ -4,23 +4,16 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 25px;
-  row-gap: 29px;
   justify-content: center;
-  padding-left: 14px;
-  padding-right: 0;
+  padding-left: 7px;
   box-sizing: border-box;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    column-gap: 27px;
-    row-gap: 29px;
-    padding: 0 0 0 32px;
+    padding: 0 0 0 41px;
   }
 
   @media (max-width: $vp-767) {
     padding: 0;
-    column-gap: 27px;
-    row-gap: 27px;
   }
 }
 

@@ -15,6 +15,7 @@
   @media (max-width: $vp-767) {
     padding-top: 30%;
     flex-direction: column;
+    flex-wrap: nowrap;
     padding-left: 24px;
     gap: 28px;
     padding-bottom: 68%;
@@ -25,7 +26,6 @@
   @media (max-width: $vp-767) {
     background-color: $alice-blue;
     width: 90%;
-    margin-left: 11%;
     padding-left: 26px;
     gap: 18px;
     padding-top: 85px;

@@ -1,9 +1,10 @@
 .social-list {
   margin: 0;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
   gap: 26px;
-  padding: 8px 54px 0 0;
+  padding: 9px 70px 0 0;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     gap: 20px;

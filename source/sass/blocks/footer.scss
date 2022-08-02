@@ -6,12 +6,9 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 41px;
-  padding-bottom: 43px;
+  padding: 43px 34px 43px 29px;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 29px;
-  padding-right: 34px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     padding-top: 33px;

@@ -43,7 +43,7 @@
 .advantages__title-wrapper {
   text-align: center;
   padding-top: 110px;
-  padding-left: 15px;
+  padding-left: 0;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
     padding-top: 90px;
@@ -78,19 +78,13 @@
 .advantages__list-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 51px;
-  padding-bottom: 115px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding: 49px 49px 121px;
 
   @media (min-width: $vp-768) and (max-width: $vp-1023) {
-    padding-bottom: 101px;
+    padding: 49px 30px 101px;
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 9%;
-    padding-bottom: 20.5%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 9% 15px 10.5%;
   }
 }

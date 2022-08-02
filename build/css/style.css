@@ -468,8 +468,8 @@ template {
   justify-content: space-between;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 39px;
-  padding-right: 39px;
+  padding-left: 55px;
+  padding-right: 55px;
   min-height: 130px;
 }
 
@@ -490,7 +490,7 @@ template {
 }
 
 .logo__wrapper {
-  padding: 0 0 0 64px;
+  padding: 0 0 0 48px;
 }
 
 .logo__wrapper .logo__main {
@@ -702,9 +702,12 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 10px;
   margin: 0 auto;
-  padding: 280px 341px 20.5% 21px;
+  padding: 279px 341px 20.4% 7px;
+}
+
+.promo__title-wrapper p {
+  padding-top: 11px;
 }
 
 .promo__title {
@@ -741,7 +744,7 @@ template {
   max-width: 1209px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 121px;
+  padding-bottom: 119px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -755,8 +758,8 @@ template {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 536px;
-  padding-top: 57px;
-  padding-left: 33px;
+  padding-top: 55px;
+  padding-left: 24px;
 }
 
 .promo__description-title {
@@ -784,7 +787,7 @@ template {
 
 .promo__description-image {
   width: 560px;
-  padding-right: 16px;
+  padding-right: 25px;
 }
 
 .promo__description-image img {
@@ -807,7 +810,7 @@ template {
 .advantages__title-wrapper {
   text-align: center;
   padding-top: 110px;
-  padding-left: 15px;
+  padding-left: 0;
 }
 
 .advantages__title-wrapper h2 {
@@ -824,10 +827,7 @@ template {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 51px;
-  padding-bottom: 115px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding: 49px 49px 121px;
 }
 
 .features-list {
@@ -839,21 +839,19 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 21px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .features-list__item {
   padding: 0;
   background-color: #f9fbfd;
-  width: 29%;
-  margin-left: 15px;
+  width: 30%;
+  margin-left: 0;
 }
 
 .features-list__item-container {
-  padding: 22% 8% 8% 9%;
+  padding: 23% 8% 6% 8%;
 }
 
 .features-list__item h3 {
@@ -946,12 +944,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   max-width: 1300px;
-  gap: 84px;
   margin: 0 auto;
+  padding: 0 46px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .booking__title-container {
@@ -963,8 +962,7 @@ template {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 43%;
-  padding-left: 8px;
-  gap: 9px;
+  padding-left: 14px;
 }
 
 .booking__title-container h2 {
@@ -979,8 +977,7 @@ template {
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  padding-right: 33%;
-  padding-left: 5px;
+  padding: 8px 32% 16px 5px;
 }
 
 .booking__title-container br {
@@ -992,6 +989,7 @@ template {
   background-color: #011c40;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-right: 22px;
 }
 
 .booking__form-container p {
@@ -1017,14 +1015,14 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 48px;
+  padding-right: 48px;
   padding-top: 26px;
-  gap: 23px;
 }
 
 .booking__form-container fieldset {
   margin: 0;
+  margin-bottom: 3px;
   padding: 0;
   border: none;
 }
@@ -1040,7 +1038,10 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
+}
+
+.booking__form-container li {
+  margin-bottom: 20px;
 }
 
 .booking__form-container [data-string] {
@@ -1139,14 +1140,13 @@ template {
 }
 
 .booking__form-container div:nth-child(3n+2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 3px;
-  gap: 6px;
+  gap: 11px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content 1fr;
+  -ms-grid-columns: min-content 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
 }
 
 .booking__form-container div:nth-child(2n+1) {
@@ -1162,7 +1162,7 @@ template {
   border: none;
   background-color: #f9fbfd;
   padding: 4% 4px 3% 3px;
-  margin-top: 9px;
+  margin-top: 32px;
   margin-left: 0;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -1193,8 +1193,8 @@ template {
 
 .catalog__title-wrapper {
   text-align: center;
-  padding-top: 109px;
-  padding-left: 15px;
+  padding-top: 110px;
+  padding-left: 0;
 }
 
 .catalog__title-wrapper h2 {
@@ -1207,7 +1207,7 @@ template {
 .catalog__list-wrapper {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 50px 4% 121px;
+  padding: 50px 4% 90px;
 }
 
 .cruises-list {
@@ -1219,15 +1219,10 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 25px;
-  -moz-column-gap: 25px;
-  column-gap: 25px;
-  row-gap: 29px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 14px;
-  padding-right: 0;
+  padding-left: 7px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1239,6 +1234,7 @@ template {
   padding-left: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0 18px 30px 7px;
 }
 
 .cruise h3 {
@@ -1357,7 +1353,7 @@ template {
   width: 81%;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 20px 0 24px 29px;
+  margin: 20px 0 24px 26px;
   text-decoration: none;
   color: #011c40;
 }
@@ -1431,8 +1427,10 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 77px 0% 14% 15%;
-  gap: 23px;
+  padding: 77px 17px 14% 14%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contacts__address-wrapper p {
@@ -1440,7 +1438,7 @@ template {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 32px;
 }
 
 .contacts__address-wrapper address {
@@ -1450,6 +1448,7 @@ template {
   font-weight: 400;
   font-style: normal;
   padding-left: 29px;
+  padding-bottom: 21px;
   position: relative;
 }
 
@@ -1493,7 +1492,7 @@ template {
   width: 45px;
   height: 46px;
   top: -12px;
-  left: -10px;
+  left: -12px;
   background: url("../img/svg/phone.svg") no-repeat center;
   background-size: 38%;
   -webkit-box-sizing: border-box;
@@ -1547,11 +1546,14 @@ template {
 .social-list {
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
+  -ms-grid-columns: min-content min-content min-content;
+  grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content min-content;
   gap: 26px;
-  padding: 8px 54px 0 0;
+  padding: 9px 70px 0 0;
 }
 
 .social__link svg {
@@ -1589,12 +1591,9 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 41px;
-  padding-bottom: 43px;
+  padding: 43px 34px 43px 29px;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 29px;
-  padding-right: 34px;
 }
 
 .footer__wrapper {
@@ -1701,7 +1700,6 @@ template {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1715,7 +1713,6 @@ template {
     width: 100%;
     padding-top: 88px;
     padding-left: 4px;
-    gap: 6px;
     padding-bottom: 0;
   }
 
@@ -1726,15 +1723,16 @@ template {
   }
 
   .booking__title-container p {
-    padding-right: 24%;
-    padding-left: 25%;
+    padding-right: 18%;
+    padding-left: 19%;
+    padding-top: 6px;
     text-align: center;
   }
 
   .booking__form-container {
-    width: 59%;
-    margin-top: 51px;
-    margin-left: 1%;
+    width: 68%;
+    margin-top: 35px;
+    margin-left: 5%;
     margin-bottom: 100px;
   }
 
@@ -1743,11 +1741,19 @@ template {
   }
 
   .booking__form-container form {
-    padding: 28px 50px 51px 50px;
+    padding: 26px 50px 51px;
   }
 
   .booking__form-container [data-string] {
     padding-top: 12px;
+  }
+
+  .booking__form-container [type="checkbox"] + [data-label]::before {
+    left: -25px;
+  }
+
+  .booking__form-container button {
+    margin-top: 33px;
   }
 }
 
@@ -1826,11 +1832,13 @@ template {
     display: block;
     position: absolute;
     left: 16%;
+    top: 20px;
   }
 
   .main-nav--no-js .main-nav__logo {
     position: absolute;
     left: 16%;
+    top: 20px;
   }
 
   .main-nav__toggle {
@@ -1848,8 +1856,19 @@ template {
     background-color: transparent;
   }
 
+  [data-nav].is-open {
+    padding: 0;
+    z-index: initial;
+    width: 87%;
+    height: 50px;
+    background-color: #f9fbfd;
+    margin-top: -20px;
+  }
+
   [data-nav].is-open ul {
-    height: 400vh;
+    height: 50%;
+    position: fixed;
+    overflow-y: auto;
   }
 
   .main-nav__wrapper {
@@ -1872,6 +1891,13 @@ template {
     display: none;
   }
 
+  .main-nav__container {
+    background-color: #f9fbfd;
+    width: 90%;
+    margin-left: 11%;
+    height: 400vh;
+  }
+
   [data-nav].is-closed .main-nav__logo {
     display: none;
   }
@@ -1882,6 +1908,8 @@ template {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     padding-left: 24px;
     gap: 28px;
     padding-bottom: 68%;
@@ -1890,7 +1918,6 @@ template {
   .menu-list--header {
     background-color: #f9fbfd;
     width: 90%;
-    margin-left: 11%;
     padding-left: 26px;
     gap: 18px;
     padding-top: 85px;
@@ -1941,7 +1968,6 @@ template {
   }
 
   .promo__title-wrapper {
-    gap: 7px;
     padding: 196px 0 175px 15px;
   }
 
@@ -1951,6 +1977,10 @@ template {
 
   [data-promo].is-hidden .promo__description-container {
     opacity: 0;
+  }
+
+  .promo__title-wrapper p {
+    padding-top: 6px;
   }
 
   .promo__title {
@@ -2004,6 +2034,10 @@ template {
     padding-right: 0;
   }
 
+  .promo__description-image img {
+    width: 100%;
+  }
+
   .advantages {
     margin-top: -68px;
     background: url("../img/mobile-features.png") no-repeat center;
@@ -2023,10 +2057,7 @@ template {
   }
 
   .advantages__list-wrapper {
-    padding-top: 9%;
-    padding-bottom: 20.5%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 9% 15px 10.5%;
   }
 
   .features-list {
@@ -2037,12 +2068,11 @@ template {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 29px;
   }
 
   .features-list__item {
     width: 100%;
-    margin-left: 0;
+    margin: 0 0 30px 0;
   }
 
   .features-list__item-container {
@@ -2111,12 +2141,12 @@ template {
 
   .booking__wrapper {
     width: 91%;
+    padding: 0;
   }
 
   .booking__title-container {
     padding-top: 58px;
     padding-left: 0;
-    gap: 14px;
   }
 
   .booking__title-container h2 {
@@ -2129,6 +2159,7 @@ template {
   .booking__title-container p {
     font-size: 16px;
     line-height: 140%;
+    padding-top: 14px;
     padding-right: 5%;
     padding-left: 5%;
     text-align: center;
@@ -2140,10 +2171,11 @@ template {
 
   .booking__form-container {
     text-align: center;
-    margin-top: 32px;
+    margin-top: 17px;
     width: 100%;
     margin-bottom: 63px;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .booking__form-container p {
@@ -2159,7 +2191,14 @@ template {
 
   .booking__form-container form {
     padding: 29px 31px 43px 31px;
-    gap: 18px;
+  }
+
+  .booking__form-container fieldset {
+    margin-bottom: 0;
+  }
+
+  .booking__form-container li {
+    margin-bottom: 19px;
   }
 
   .booking__form-container [data-string] {
@@ -2192,7 +2231,7 @@ template {
 
   .booking__form-container button {
     padding: 5% 1px 4% 2px;
-    margin-top: 10px;
+    margin-top: 28px;
     margin-left: 0;
   }
 
@@ -2208,24 +2247,21 @@ template {
   }
 
   .catalog__list-wrapper {
-    padding-top: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 130px;
+    padding: 30px 0 104px;
   }
 
   .cruises-list {
     padding: 0;
-    -webkit-column-gap: 27px;
-    -moz-column-gap: 27px;
-    column-gap: 27px;
-    row-gap: 27px;
   }
 
   .cruises-list__item {
     padding: 0 1px 3px 1px;
     -ms-grid-columns: 270px;
     grid-template-columns: 270px;
+  }
+
+  .cruise {
+    margin: 0 9px 27px 8px;
   }
 
   .cruise h3 {
@@ -2274,7 +2310,10 @@ template {
     -ms-flex-order: 1;
     order: 1;
     padding: 13% 1% 12% 0%;
-    gap: 19px;
+  }
+
+  .contacts__address-wrapper p {
+    padding-bottom: 27px;
   }
 
   .contacts__address-wrapper address {
@@ -2412,7 +2451,11 @@ template {
 
   .promo__title-wrapper {
     width: 87%;
-    padding: 267px 0 279px;
+    padding: 269px 0 274px;
+  }
+
+  .promo__title-wrapper p {
+    padding-top: 13px;
   }
 
   .promo__title {
@@ -2459,20 +2502,16 @@ template {
   }
 
   .advantages__list-wrapper {
-    padding-bottom: 101px;
-  }
-
-  .features-list {
-    gap: 10px;
+    padding: 49px 30px 101px;
   }
 
   .features-list__item {
     width: 29%;
-    margin-left: 16px;
+    margin-left: 11px;
   }
 
   .features-list__item-container {
-    padding: 32% 0 9% 9%;
+    padding: 34% 0 9% 8%;
   }
 
   .features-list__item h3::before {
@@ -2526,16 +2565,12 @@ template {
   }
 
   .catalog__list-wrapper {
-    padding-bottom: 98px;
+    padding-bottom: 70px;
     padding-left: 7px;
   }
 
   .cruises-list {
-    -webkit-column-gap: 27px;
-    -moz-column-gap: 27px;
-    column-gap: 27px;
-    row-gap: 29px;
-    padding: 0 0 0 32px;
+    padding: 0 0 0 41px;
   }
 
   .cruises-list__item {
@@ -2544,8 +2579,12 @@ template {
     padding: 0 1px 1px 2px;
   }
 
+  .cruise {
+    margin: 0 19px 29px 7px;
+  }
+
   .cruise h3 {
-    bottom: 8%;
+    bottom: 7%;
     left: 12%;
   }
 
@@ -2577,12 +2616,15 @@ template {
 
   .contacts__address-wrapper {
     padding: 18% 0 18% 7%;
-    gap: 19px;
+  }
+
+  .contacts__address-wrapper p {
+    padding-bottom: 28px;
   }
 
   .contacts__address-wrapper address::before {
-    top: -10px;
-    left: -12px;
+    top: -9px;
+    left: -13px;
     background-size: 38%;
   }
 
@@ -2591,8 +2633,8 @@ template {
   }
 
   .contacts__link-container a::before {
-    top: -10px;
-    left: -12px;
+    top: -13px;
+    left: -13px;
   }
 
   .social-list {
